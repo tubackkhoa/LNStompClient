@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24C319951BCCB2F4002D409A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C319941BCCB2F4002D409A /* main.m */; };
+		24C319981BCCB2F4002D409A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C319971BCCB2F4002D409A /* AppDelegate.m */; };
+		24C3199B1BCCB2F4002D409A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3199A1BCCB2F4002D409A /* ViewController.m */; };
+		24C3199E1BCCB2F4002D409A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C3199C1BCCB2F4002D409A /* Main.storyboard */; };
+		24C319A01BCCB2F4002D409A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C3199F1BCCB2F4002D409A /* Assets.xcassets */; };
+		24C319A31BCCB2F4002D409A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C319A11BCCB2F4002D409A /* LaunchScreen.storyboard */; };
+		24C319AE1BCCB2F4002D409A /* LNStompClientDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C319AD1BCCB2F4002D409A /* LNStompClientDemoTests.m */; };
+		24C319B91BCCB2F4002D409A /* LNStompClientDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C319B81BCCB2F4002D409A /* LNStompClientDemoUITests.m */; };
+		24C319CA1BCCB35E002D409A /* LNStompClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C319C91BCCB35E002D409A /* LNStompClient.m */; settings = {ASSET_TAGS = (); }; };
+		FDD7762BB9DA63266F7BAEEC /* libPods-LNStompClientDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5380F77CDE01B08349D20299 /* libPods-LNStompClientDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24C319AA1BCCB2F4002D409A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C319881BCCB2F4002D409A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24C3198F1BCCB2F4002D409A;
+			remoteInfo = LNStompClientDemo;
+		};
+		24C319B51BCCB2F4002D409A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C319881BCCB2F4002D409A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24C3198F1BCCB2F4002D409A;
+			remoteInfo = LNStompClientDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16D904B897A6F8045D233363 /* Pods-LNStompClientDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNStompClientDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNStompClientDemo/Pods-LNStompClientDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		24C319901BCCB2F4002D409A /* LNStompClientDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNStompClientDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C319941BCCB2F4002D409A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24C319961BCCB2F4002D409A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24C319971BCCB2F4002D409A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24C319991BCCB2F4002D409A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24C3199A1BCCB2F4002D409A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24C3199D1BCCB2F4002D409A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24C3199F1BCCB2F4002D409A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24C319A21BCCB2F4002D409A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24C319A41BCCB2F4002D409A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C319A91BCCB2F4002D409A /* LNStompClientDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LNStompClientDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C319AD1BCCB2F4002D409A /* LNStompClientDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNStompClientDemoTests.m; sourceTree = "<group>"; };
+		24C319AF1BCCB2F4002D409A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C319B41BCCB2F4002D409A /* LNStompClientDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LNStompClientDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C319B81BCCB2F4002D409A /* LNStompClientDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNStompClientDemoUITests.m; sourceTree = "<group>"; };
+		24C319BA1BCCB2F4002D409A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C319C81BCCB35E002D409A /* LNStompClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LNStompClient.h; path = MMPReactiveStompClient/Classes/LNStompClient.h; sourceTree = "<group>"; };
+		24C319C91BCCB35E002D409A /* LNStompClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LNStompClient.m; path = MMPReactiveStompClient/Classes/LNStompClient.m; sourceTree = "<group>"; };
+		5380F77CDE01B08349D20299 /* libPods-LNStompClientDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LNStompClientDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B9AFC58F1465DD2A45CC17 /* Pods-LNStompClientDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNStompClientDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNStompClientDemo/Pods-LNStompClientDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24C3198D1BCCB2F4002D409A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD7762BB9DA63266F7BAEEC /* libPods-LNStompClientDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C319A61BCCB2F4002D409A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C319B11BCCB2F4002D409A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24C319871BCCB2F4002D409A = {
+			isa = PBXGroup;
+			children = (
+				24C319921BCCB2F4002D409A /* LNStompClientDemo */,
+				24C319AC1BCCB2F4002D409A /* LNStompClientDemoTests */,
+				24C319B71BCCB2F4002D409A /* LNStompClientDemoUITests */,
+				24C319911BCCB2F4002D409A /* Products */,
+				AF8457152425D193B4A45739 /* Pods */,
+				391298E5B13EEF55673476DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24C319911BCCB2F4002D409A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C319901BCCB2F4002D409A /* LNStompClientDemo.app */,
+				24C319A91BCCB2F4002D409A /* LNStompClientDemoTests.xctest */,
+				24C319B41BCCB2F4002D409A /* LNStompClientDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C319921BCCB2F4002D409A /* LNStompClientDemo */ = {
+			isa = PBXGroup;
+			children = (
+				24C319CB1BCCB36A002D409A /* LNStompClient */,
+				24C319961BCCB2F4002D409A /* AppDelegate.h */,
+				24C319971BCCB2F4002D409A /* AppDelegate.m */,
+				24C319991BCCB2F4002D409A /* ViewController.h */,
+				24C3199A1BCCB2F4002D409A /* ViewController.m */,
+				24C3199C1BCCB2F4002D409A /* Main.storyboard */,
+				24C3199F1BCCB2F4002D409A /* Assets.xcassets */,
+				24C319A11BCCB2F4002D409A /* LaunchScreen.storyboard */,
+				24C319A41BCCB2F4002D409A /* Info.plist */,
+				24C319931BCCB2F4002D409A /* Supporting Files */,
+			);
+			path = LNStompClientDemo;
+			sourceTree = "<group>";
+		};
+		24C319931BCCB2F4002D409A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24C319941BCCB2F4002D409A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24C319AC1BCCB2F4002D409A /* LNStompClientDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				24C319AD1BCCB2F4002D409A /* LNStompClientDemoTests.m */,
+				24C319AF1BCCB2F4002D409A /* Info.plist */,
+			);
+			path = LNStompClientDemoTests;
+			sourceTree = "<group>";
+		};
+		24C319B71BCCB2F4002D409A /* LNStompClientDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24C319B81BCCB2F4002D409A /* LNStompClientDemoUITests.m */,
+				24C319BA1BCCB2F4002D409A /* Info.plist */,
+			);
+			path = LNStompClientDemoUITests;
+			sourceTree = "<group>";
+		};
+		24C319CB1BCCB36A002D409A /* LNStompClient */ = {
+			isa = PBXGroup;
+			children = (
+				24C319C81BCCB35E002D409A /* LNStompClient.h */,
+				24C319C91BCCB35E002D409A /* LNStompClient.m */,
+			);
+			name = LNStompClient;
+			sourceTree = "<group>";
+		};
+		391298E5B13EEF55673476DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5380F77CDE01B08349D20299 /* libPods-LNStompClientDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF8457152425D193B4A45739 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16D904B897A6F8045D233363 /* Pods-LNStompClientDemo.debug.xcconfig */,
+				D1B9AFC58F1465DD2A45CC17 /* Pods-LNStompClientDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24C3198F1BCCB2F4002D409A /* LNStompClientDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C319BD1BCCB2F4002D409A /* Build configuration list for PBXNativeTarget "LNStompClientDemo" */;
+			buildPhases = (
+				6B0A908E3EAD52BEBF821DE5 /* Check Pods Manifest.lock */,
+				24C3198C1BCCB2F4002D409A /* Sources */,
+				24C3198D1BCCB2F4002D409A /* Frameworks */,
+				24C3198E1BCCB2F4002D409A /* Resources */,
+				BFE920273F40D1B716D4F4F3 /* Embed Pods Frameworks */,
+				EEA51C40BAC90C9515B50D11 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LNStompClientDemo;
+			productName = LNStompClientDemo;
+			productReference = 24C319901BCCB2F4002D409A /* LNStompClientDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24C319A81BCCB2F4002D409A /* LNStompClientDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C319C01BCCB2F4002D409A /* Build configuration list for PBXNativeTarget "LNStompClientDemoTests" */;
+			buildPhases = (
+				24C319A51BCCB2F4002D409A /* Sources */,
+				24C319A61BCCB2F4002D409A /* Frameworks */,
+				24C319A71BCCB2F4002D409A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C319AB1BCCB2F4002D409A /* PBXTargetDependency */,
+			);
+			name = LNStompClientDemoTests;
+			productName = LNStompClientDemoTests;
+			productReference = 24C319A91BCCB2F4002D409A /* LNStompClientDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24C319B31BCCB2F4002D409A /* LNStompClientDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C319C31BCCB2F4002D409A /* Build configuration list for PBXNativeTarget "LNStompClientDemoUITests" */;
+			buildPhases = (
+				24C319B01BCCB2F4002D409A /* Sources */,
+				24C319B11BCCB2F4002D409A /* Frameworks */,
+				24C319B21BCCB2F4002D409A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C319B61BCCB2F4002D409A /* PBXTargetDependency */,
+			);
+			name = LNStompClientDemoUITests;
+			productName = LNStompClientDemoUITests;
+			productReference = 24C319B41BCCB2F4002D409A /* LNStompClientDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24C319881BCCB2F4002D409A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Thanh Tu";
+				TargetAttributes = {
+					24C3198F1BCCB2F4002D409A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					24C319A81BCCB2F4002D409A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 24C3198F1BCCB2F4002D409A;
+					};
+					24C319B31BCCB2F4002D409A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 24C3198F1BCCB2F4002D409A;
+					};
+				};
+			};
+			buildConfigurationList = 24C3198B1BCCB2F4002D409A /* Build configuration list for PBXProject "LNStompClientDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24C319871BCCB2F4002D409A;
+			productRefGroup = 24C319911BCCB2F4002D409A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24C3198F1BCCB2F4002D409A /* LNStompClientDemo */,
+				24C319A81BCCB2F4002D409A /* LNStompClientDemoTests */,
+				24C319B31BCCB2F4002D409A /* LNStompClientDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24C3198E1BCCB2F4002D409A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C319A31BCCB2F4002D409A /* LaunchScreen.storyboard in Resources */,
+				24C319A01BCCB2F4002D409A /* Assets.xcassets in Resources */,
+				24C3199E1BCCB2F4002D409A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C319A71BCCB2F4002D409A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C319B21BCCB2F4002D409A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B0A908E3EAD52BEBF821DE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE920273F40D1B716D4F4F3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNStompClientDemo/Pods-LNStompClientDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA51C40BAC90C9515B50D11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNStompClientDemo/Pods-LNStompClientDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24C3198C1BCCB2F4002D409A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C3199B1BCCB2F4002D409A /* ViewController.m in Sources */,
+				24C319981BCCB2F4002D409A /* AppDelegate.m in Sources */,
+				24C319CA1BCCB35E002D409A /* LNStompClient.m in Sources */,
+				24C319951BCCB2F4002D409A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C319A51BCCB2F4002D409A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C319AE1BCCB2F4002D409A /* LNStompClientDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C319B01BCCB2F4002D409A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C319B91BCCB2F4002D409A /* LNStompClientDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24C319AB1BCCB2F4002D409A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24C3198F1BCCB2F4002D409A /* LNStompClientDemo */;
+			targetProxy = 24C319AA1BCCB2F4002D409A /* PBXContainerItemProxy */;
+		};
+		24C319B61BCCB2F4002D409A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24C3198F1BCCB2F4002D409A /* LNStompClientDemo */;
+			targetProxy = 24C319B51BCCB2F4002D409A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24C3199C1BCCB2F4002D409A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C3199D1BCCB2F4002D409A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24C319A11BCCB2F4002D409A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C319A21BCCB2F4002D409A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24C319BB1BCCB2F4002D409A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24C319BC1BCCB2F4002D409A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24C319BE1BCCB2F4002D409A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D904B897A6F8045D233363 /* Pods-LNStompClientDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LNStompClientDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lnstudio.stompclient.LNStompClientDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24C319BF1BCCB2F4002D409A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B9AFC58F1465DD2A45CC17 /* Pods-LNStompClientDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LNStompClientDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lnstudio.stompclient.LNStompClientDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		24C319C11BCCB2F4002D409A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LNStompClientDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lnstudio.stompclient.LNStompClientDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LNStompClientDemo.app/LNStompClientDemo";
+			};
+			name = Debug;
+		};
+		24C319C21BCCB2F4002D409A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LNStompClientDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lnstudio.stompclient.LNStompClientDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LNStompClientDemo.app/LNStompClientDemo";
+			};
+			name = Release;
+		};
+		24C319C41BCCB2F4002D409A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LNStompClientDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lnstudio.stompclient.LNStompClientDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LNStompClientDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		24C319C51BCCB2F4002D409A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LNStompClientDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lnstudio.stompclient.LNStompClientDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LNStompClientDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24C3198B1BCCB2F4002D409A /* Build configuration list for PBXProject "LNStompClientDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C319BB1BCCB2F4002D409A /* Debug */,
+				24C319BC1BCCB2F4002D409A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C319BD1BCCB2F4002D409A /* Build configuration list for PBXNativeTarget "LNStompClientDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C319BE1BCCB2F4002D409A /* Debug */,
+				24C319BF1BCCB2F4002D409A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C319C01BCCB2F4002D409A /* Build configuration list for PBXNativeTarget "LNStompClientDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C319C11BCCB2F4002D409A /* Debug */,
+				24C319C21BCCB2F4002D409A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C319C31BCCB2F4002D409A /* Build configuration list for PBXNativeTarget "LNStompClientDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C319C41BCCB2F4002D409A /* Debug */,
+				24C319C51BCCB2F4002D409A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24C319881BCCB2F4002D409A /* Project object */;
+}
